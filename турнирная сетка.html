@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .tournament-bracket {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .round {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            min-width: 200px;
+            margin: 0 10px;
+        }
+        .match {
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            position: relative;
+        }
+        .team {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        .team:last-child {
+            border-bottom: none;
+        }
+        .winners-bracket, .losers-bracket {
+            margin-bottom: 40px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .final {
+            background: #f0f0f0;
+        }
+        .arrow {
+            position: absolute;
+            border-left: 2px dashed #999;
+            height: 50px;
+            left: -20px;
+            top: 100%;
+        }
+        .bracket-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bracket-container">
+        <h2>Турнирная сетка CS2 MCB</h2>
+        
+        <div class="winners-bracket">
+            <h2>Основная сетка</h2>
+            <div class="tournament-bracket">
+                <div class="round">
+                    <div class="match">
+                        <div class="team">Команда 1</div>
+                        <div class="team">Команда 2</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">Команда 3</div>
+                        <div class="team">Команда 4</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">Команда 5</div>
+                        <div class="team">Команда 6</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">Команда 7</div>
+                        <div class="team">Команда 8</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="match">
+                        <div class="team">______</div>
+                        <div class="team">______</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">______</div>
+                        <div class="team">______</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="match">
+                        <div class="team">______</div>
+                        <div class="team">______</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="losers-bracket">
+            <h2>Сетка проигравших</h2>
+            <div class="tournament-bracket">
+                <div class="round">
+                    <div class="match">
+                        <div class="team">Проигравший 1-2</div>
+                        <div class="team">Проигравший 3-4</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">Проигравший 5-6</div>
+                        <div class="team">Проигравший 7-8</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="match">
+                        <div class="team">Проигравший WB 1/2(1)</div>
+                        <div class="team">______</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">Проигравший WB 1/2(2)</div>
+                        <div class="team">______</div>
+                    </div>
+                </div>
+                
+                <div class="round">
+                    <div class="match">
+                        <div class="team">______</div>
+                        <div class="team">______</div>
+                    </div>
+                </div>
+
+                <div class="round">
+                    <div class="match">
+                        <div class="team">______</div>
+                        <div class="team">Проигравший WB Финала</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="finals">
+            <h2>Гранд-финал</h2>
+            <div class="tournament-bracket">
+                <div class="round">
+                    <div class="match final">
+                        <div class="team">Победитель WB</div>
+                        <div class="team">Победитель LB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
